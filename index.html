@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SkyLine Premium | العقارات الفاخرة</title>
+
+  <!-- ====== الخطوط ====== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet" />
+
+  <!-- ====== Font Awesome ====== -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet" />
+
+  <!-- ====== Swiper.js ====== -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/index.css">
+
+  
+</head>
+
+<body>
+
+  <!-- ===== شاشة التحميل ===== -->
+  <div class="loader" id="loader">
+    <div class="loader-logo">
+      <img src="img/1.jpg" alt="SkyLine" />
+    </div>
+    <div class="loader-bar-wrap">
+      <div class="loader-bar"></div>
+    </div>
+    <p class="loader-text">نحن نبني ثقتك.. تفصيلاً تفصيلاً</p>
+  </div>
+
+  <!-- ===== المؤشر المخصص ===== -->
+  <div class="cursor"></div>
+
+  <!-- ===== الناف بار ===== -->
+  <header class="navbar" id="navbar">
+    <div class="nav-logo">
+      <div class="nav-logo-badge">
+        <img src="img/1.jpg" alt="شعار SkyLine" />
+      </div>
+      <div class="nav-logo-text">SkyLine</div>
+    </div>
+
+    <ul class="nav-links" id="navLinks">
+      <button class="close-menu" id="closeMenu">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <li><a href="#hero" class="active"><i class="fa-solid fa-house"></i> الرئيسية</a></li>
+      <li><a href="#who"><i class="fa-solid fa-users"></i> من نحن</a></li>
+      <li><a href="#featured"><i class="fa-solid fa-star"></i> عقارات مميزة</a></li>
+      <li><a href="properties.html"><i class="fa-solid fa-building"></i> استعرض العقارات</a></li>
+      <li><a href="#faq"><i class="fa-solid fa-circle-question"></i> لماذا SkyLine؟</a></li>
+      <li><a href="#contact"><i class="fa-solid fa-envelope"></i> تواصل</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle" aria-label="تبديل الوضع">
+        <i class="fa-solid fa-moon"></i>
+      </button>
+      <a href="#contact" class="nav-cta">ابدأ الآن</a>
+      <button class="nav-burger" id="navBurger" aria-label="فتح القائمة">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <div class="nav-overlay" id="navOverlay"></div>
+
+  <!-- ===== الهيرو ===== -->
+  <section id="hero">
+    <video class="hero-video hero-video-desktop" autoplay muted loop playsinline>
+      <source src="img/hero-desktop.mp4" type="video/mp4" />
+    </video>
+    <video class="hero-video hero-video-mobile" autoplay muted loop playsinline>
+      <source src="img/hero-mobile.mp4" type="video/mp4" />
+    </video>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>نصنع <span>العقار</span> بأسلوب فاخر</h1>
+      <p>حلول عقارية حديثة تجمع بين التصميم العصري، الخبرة الطويلة، والاستثمار الذكي.</p>
+      <div class="hero-btns">
+        <a href="properties.html" class="hero-btn primary">استكشف جميع العقارات</a>
+        <a href="#contact" class="hero-btn secondary">تواصل معنا</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== من نحن ===== -->
+  <section id="who">
+    <div class="container who-wrapper">
+      <div class="who-grid">
+        <div class="who-image-wrapper">
+          <div class="who-image">
+            <img src="img/about.jpg" alt="عن الشركة" />
+            <div class="who-image-shimmer"></div>
+          </div>
+          <div class="who-image-badge">
+            <i class="fa-regular fa-gem"></i>
+            منذ 2010
+          </div>
+        </div>
+        <div class="who-content fade-up">
+          <div class="who-tag">من نحن</div>
+          <h2>قصة <span>نجاحنا</span></h2>
+          <p>نحن شركة متخصصة في تطوير وتسويق وإدارة المشاريع العقارية بمعايير عالمية تجمع بين الجودة، الفخامة، والابتكار.</p>
+          <p>نؤمن أن كل مشروع عقاري يجب أن يقدم تجربة استثنائية، ولذلك نهتم بأدق التفاصيل منذ الفكرة وحتى التسليم.</p>
+          <div class="who-values">
+            <div class="who-value"><i class="fa-regular fa-handshake"></i><span>النزاهة</span></div>
+            <div class="who-value"><i class="fa-regular fa-star"></i><span>التميز</span></div>
+            <div class="who-value"><i class="fa-regular fa-lightbulb"></i><span>الابتكار</span></div>
+            <div class="who-value"><i class="fa-regular fa-heart"></i><span>الشغف</span></div>
+          </div>
+          <div class="who-stats">
+            <div class="who-stat"><h3>15+</h3><span>سنة خبرة</span></div>
+            <div class="who-stat"><h3>240</h3><span>مشروع مكتمل</span></div>
+            <div class="who-stat"><h3>980+</h3><span>عميل سعيد</span></div>
+          </div>
+          <a href="#contact" class="who-btn">تحدث مع مستشارنا <i class="fa-solid fa-arrow-left"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== عقارات مميزة ===== -->
+  <section id="featured">
+    <div class="container">
+      <div class="section-head">
+        <small>عقارات مميزة</small>
+        <h2>اختر عقار أحلامك</h2>
+        <p>مجموعة مختارة من أفضل العقارات الفاخرة في مواقع استراتيجية.</p>
+      </div>
+
+      <!-- ===== Swiper ===== -->
+      <div class="swiper featured-swiper">
+        <div class="swiper-wrapper">
+
+          <!-- العقار 1 -->
+          <div class="swiper-slide">
+            <div class="featured-slide">
+              <div class="featured-slide-image" onclick="window.location.href='property-detail.html?id=0'">
+                <img src="img/9.jpg" alt="فيلا فاخرة" />
+                <div class="zoom-icon"><i class="fa-solid fa-expand"></i></div>
+              </div>
+              <div class="featured-slide-body">
+                <h3>فيلا فاخرة بإطلالة بحرية</h3>
+                <div class="location"><i class="fa-solid fa-location-dot"></i> دمشق - سوريا</div>
+                <div class="price">$1,250,000</div>
+                <a href="property-detail.html?id=0" class="details-btn">عرض التفاصيل <i class="fa-solid fa-arrow-left"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- العقار 2 -->
+          <div class="swiper-slide">
+            <div class="featured-slide">
+              <div class="featured-slide-image" onclick="window.location.href='property-detail.html?id=1'">
+                <img src="img/8.jpg" alt="شقة حديثة" />
+                <div class="zoom-icon"><i class="fa-solid fa-expand"></i></div>
+              </div>
+              <div class="featured-slide-body">
+                <h3>شقة حديثة في قلب المدينة</h3>
+                <div class="location"><i class="fa-solid fa-location-dot"></i> دمشق - سوريا</div>
+                <div class="price">$890,000</div>
+                <a href="property-detail.html?id=1" class="details-btn">عرض التفاصيل <i class="fa-solid fa-arrow-left"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- العقار 3 -->
+          <div class="swiper-slide">
+            <div class="featured-slide">
+              <div class="featured-slide-image" onclick="window.location.href='property-detail.html?id=2'">
+                <img src="img/7.jpg" alt="بنتهاوس" />
+                <div class="zoom-icon"><i class="fa-solid fa-expand"></i></div>
+              </div>
+              <div class="featured-slide-body">
+                <h3>بنتهاوس فاخر بإطلالة رائعة</h3>
+                <div class="location"><i class="fa-solid fa-location-dot"></i> دمشق - سوريا</div>
+                <div class="price">$3,500 / شهر</div>
+                <a href="property-detail.html?id=2" class="details-btn">عرض التفاصيل <i class="fa-solid fa-arrow-left"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- العقار 4 -->
+          <div class="swiper-slide">
+            <div class="featured-slide">
+              <div class="featured-slide-image" onclick="window.location.href='property-detail.html?id=3'">
+                <img src="img/6.jpg" alt="فيلا كلاسيكية" />
+                <div class="zoom-icon"><i class="fa-solid fa-expand"></i></div>
+              </div>
+              <div class="featured-slide-body">
+                <h3>فيلا كلاسيكية فاخرة</h3>
+                <div class="location"><i class="fa-solid fa-location-dot"></i> دمشق - سوريا</div>
+                <div class="price">$2,100,000</div>
+                <a href="property-detail.html?id=3" class="details-btn">عرض التفاصيل <i class="fa-solid fa-arrow-left"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- العقار 5 -->
+          <div class="swiper-slide">
+            <div class="featured-slide">
+              <div class="featured-slide-image" onclick="window.location.href='property-detail.html?id=4'">
+                <img src="img/5.jpg" alt="فيلا عصرية" />
+                <div class="zoom-icon"><i class="fa-solid fa-expand"></i></div>
+              </div>
+              <div class="featured-slide-body">
+                <h3>فيلا عصرية بإطلالة جبلية</h3>
+                <div class="location"><i class="fa-solid fa-location-dot"></i> دمشق - سوريا</div>
+                <div class="price">$1,450,000</div>
+                <a href="property-detail.html?id=4" class="details-btn">عرض التفاصيل <i class="fa-solid fa-arrow-left"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- العقار 6 -->
+          <div class="swiper-slide">
+            <div class="featured-slide">
+              <div class="featured-slide-image" onclick="window.location.href='property-detail.html?id=5'">
+                <img src="img/4.jpg" alt="شقة راقية" />
+                <div class="zoom-icon"><i class="fa-solid fa-expand"></i></div>
+              </div>
+              <div class="featured-slide-body">
+                <h3>شقة راقية بموقع مميز</h3>
+                <div class="location"><i class="fa-solid fa-location-dot"></i> دمشق - سوريا</div>
+                <div class="price">$750,000</div>
+                <a href="property-detail.html?id=5" class="details-btn">عرض التفاصيل <i class="fa-solid fa-arrow-left"></i></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+     القسم: لماذا SkyLine؟ + أسئلة عن العقارات في سوريا
+     ============================================================ -->
+  <section id="faq">
+    <div class="container">
+      <div class="section-head">
+        <small>لماذا SkyLine؟</small>
+        <h2>كل ما تريد معرفته عن العقارات في سوريا</h2>
+        <p>إجابات مختصرة على أكثر الأسئلة التي تصلنا من عملائنا.</p>
+      </div>
+
+      <div class="faq-grid">
+
+        <div class="faq-item active">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            <span>لماذا تختار SkyLine Premium؟</span>
+            <i class="fa-solid fa-chevron-down faq-icon"></i>
+          </div>
+          <div class="faq-answer">
+            <p>خبرة 15 عاماً في السوق السوري، شبكة واسعة من العقارات الفاخرة، فريق استشاري متخصص، وشفافية كاملة في كل صفقة. نضع مصلحتك فوق كل اعتبار.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            <span>ما هي أفضل المناطق السكنية في دمشق؟</span>
+            <i class="fa-solid fa-chevron-down faq-icon"></i>
+          </div>
+          <div class="faq-answer">
+            <p><strong>المالكي، أبو رمانة، الربوة، واليرموك.</strong> المالكي وأبو رمانة من أعرق المناطق وأكثرها هدوءاً، الربوة توفر إطلالات طبيعية، واليرموك منطقة حيوية قريبة من الخدمات.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            <span>ما هي إجراءات شراء عقار في سوريا؟</span>
+            <i class="fa-solid fa-chevron-down faq-icon"></i>
+          </div>
+          <div class="faq-answer">
+            <p>تبدأ بتوقيع عقد ابتدائي، ثم التوجه إلى <strong>دائرة السجل العقاري</strong> لإتمام التسجيل. تحتاج هوية شخصية، وإثبات ملكية البائع، وعقد البيع النهائي. تستغرق العملية من أسبوعين إلى شهر.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            <span>هل الاستثمار العقاري في سوريا مربح؟</span>
+            <i class="fa-solid fa-chevron-down faq-icon"></i>
+          </div>
+          <div class="faq-answer">
+            <p>نعم، خاصة في دمشق وحلب. مع عودة الاستقرار، تشهد الأسعار ارتفاعاً تدريجياً. العائد على الإيجار في المناطق الحيوية يتراوح بين <strong>6% إلى 10%</strong> سنوياً.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            <span>ما هي الضرائب والرسوم المترتبة؟</span>
+            <i class="fa-solid fa-chevron-down faq-icon"></i>
+          </div>
+          <div class="faq-answer">
+            <p>تشمل <strong>رسوم التسجيل العقاري</strong> (حوالي 3% من قيمة العقار)، رسوم الطابع، وضريبة الأبنية السنوية. فريقنا القانوني يقدم استشارة تفصيلية قبل إتمام الصفقة.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            <span>هل يمكن الشراء بدون تمويل بنكي؟</span>
+            <i class="fa-solid fa-chevron-down faq-icon"></i>
+          </div>
+          <div class="faq-answer">
+            <p>نعم، يمكنك الشراء نقداً أو عبر خطة تقسيط مع البائع. نقدم في SkyLine Premium خدمات تسهيل الدفع مع مطورين موثوقين، بمقدم يبدأ من <strong>20%</strong> وتقسيط حتى 5 سنوات.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+     قسم تواصل معنا
+     ============================================================ -->
+  <section id="contact">
+    <div class="container contact-wrapper">
+      <div class="section-head">
+        <small>تواصل معنا</small>
+        <h2>نحن هنا لخدمتك</h2>
+        <p>يسعدنا الرد على جميع استفساراتكم، فريقنا جاهز لتقديم الاستشارة المجانية.</p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- نموذج الاتصال -->
+        <div class="contact-form-box">
+          <h3 class="form-title">أرسل لنا رسالتك</h3>
+          <p class="form-subtitle">سنرد عليك في أقرب وقت ممكن</p>
+
+          <form class="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label>الاسم الكامل</label>
+                <input type="text" placeholder="أدخل اسمك" required />
+                <span class="input-icon"><i class="fa-regular fa-user"></i></span>
+              </div>
+              <div class="form-group">
+                <label>البريد الإلكتروني</label>
+                <input type="email" placeholder="بريدك الإلكتروني" required />
+                <span class="input-icon"><i class="fa-regular fa-envelope"></i></span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>رقم الهاتف</label>
+              <input type="tel" placeholder="رقم هاتفك للتواصل" />
+            </div>
+            <div class="form-group">
+              <label>الموضوع</label>
+              <input type="text" placeholder="موضوع رسالتك" />
+            </div>
+            <div class="form-group">
+              <label>الرسالة</label>
+              <textarea placeholder="اكتب رسالتك هنا..." required></textarea>
+              <span class="input-icon-bottom"><i class="fa-regular fa-message"></i></span>
+            </div>
+            <button class="contact-btn" type="submit">
+              إرسال الرسالة
+              <i class="fa-solid fa-arrow-left"></i>
+            </button>
+          </form>
+        </div>
+
+        <!-- معلومات الاتصال -->
+        <div class="contact-info-box">
+          <div class="info-head">
+            <h3>معلومات التواصل</h3>
+            <p>تواصل معنا عبر القنوات التالية، أو تابعنا على وسائل التواصل الاجتماعي.</p>
+          </div>
+
+
+
+            <div class="contact-info-items">
+  <div class="info-item">
+    <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+    <div class="info-text">
+      <h4>العنوان</h4>
+      <p>دمشق - سوريا</p>
+    </div>
+  </div>
+
+  <div class="info-item">
+    <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+    <div class="info-text">
+      <h4>رقم الهاتف</h4>
+      <p dir="ltr">+963 123 456 789</p>  <!-- ← هنا التعديل -->
+    </div>
+  </div>
+
+  <div class="info-item">
+    <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+    <div class="info-text">
+      <h4>البريد الإلكتروني</h4>
+      <p dir="ltr">info@skyline.com</p>
+    </div>
+  </div>
+
+  <div class="info-item">
+    <div class="info-icon"><i class="fa-regular fa-clock"></i></div>
+    <div class="info-text">
+      <h4>ساعات العمل</h4>
+      <p>الإثنين - الجمعة: 9:00 صباحاً - 6:00 مساءً</p>
+    </div>
+  </div>
+</div>
+  </section>
+
+  <!-- ===== الفوتر ===== -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo">SkyLine</div>
+          <p class="footer-about">حلول عقارية فاخرة بمعايير عالمية تجمع بين الجودة والابتكار والخبرة.</p>
+        </div>
+        <div>
+          <h3 style="margin-bottom:14px;font-size:17px;">روابط سريعة</h3>
+          <div class="footer-links">
+            <a href="#hero">الرئيسية</a>
+            <a href="#who">من نحن</a>
+            <a href="#featured">عقارات مميزة</a>
+            <a href="properties.html">استعرض العقارات</a>
+            <a href="#faq">لماذا SkyLine؟</a>
+            <a href="#contact">تواصل</a>
+          </div>
+        </div>
+        <div>
+          <h3 style="margin-bottom:14px;font-size:17px;">خدماتنا</h3>
+          <div class="footer-links">
+            <a href="#">بيع العقارات</a>
+            <a href="#">شراء العقارات</a>
+            <a href="#">الاستثمار العقاري</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">© 2026 SkyLine Premium Real Estate — جميع الحقوق محفوظة.</div>
+    </div>
+  </footer>
+
+  <!-- ===== زر العودة للأعلى ===== -->
+  <a href="#" class="to-top" id="toTop"><i class="fa-solid fa-arrow-up"></i></a>
+
+  <!-- ===== زر الشات بوت ===== -->
+  <button class="chat-toggle" id="chatToggle" onclick="toggleChat()" aria-label="فتح المحادثة">
+    <i class="fa-regular fa-comment"></i>
+    <i class="fa-solid fa-xmark"></i>
+  </button>
+
+  <!-- ===== نافذة الشات ===== -->
+  <div class="chat-window" id="chatWindow">
+    <div class="chat-header">
+      <div class="chat-header-info">
+        <div class="chat-avatar"><i class="fa-regular fa-comment"></i></div>
+        <div>
+          <span class="chat-name">مساعد SkyLine</span>
+          <span class="chat-status">متصل الآن</span>
+        </div>
+      </div>
+      <button class="chat-header-close" onclick="toggleChat()">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <div class="chat-messages" id="chatMessages">
+      <div class="chat-message bot">أهلاً بك! 👋</div>
+      <div class="chat-message bot">كيف يمكنني مساعدتك اليوم؟</div>
+    </div>
+
+    <div class="chat-footer">
+      <input type="text" id="chatInput" placeholder="اكتب رسالتك هنا..." onkeypress="if(event.key==='Enter') sendMessage()" />
+      <button class="send-btn" onclick="sendMessage()">
+        <i class="fa-regular fa-paper-plane"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- ============================================================
+     السكريبتات
+     ============================================================ -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js">
+  </script>
+<script src="js/index.js"></script>
+  
+
+</body>
+</html>

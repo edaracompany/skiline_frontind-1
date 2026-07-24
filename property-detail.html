@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>تفاصيل العقار | SkyLine Premium</title>
+
+  <!-- ====== الخطوط ====== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet" />
+
+  <!-- ====== Font Awesome ====== -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet" />
+
+  <!-- ====== Swiper.js ====== -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <link rel="stylesheet" href="css/property-detail.css">
+</head>
+
+<body>
+
+  <!-- ===== شاشة التحميل ===== -->
+  <div class="loader" id="loader">
+    <div class="loader-logo">
+      <img src="img/1.jpg" alt="SkyLine" />
+    </div>
+    <div class="loader-bar-wrap">
+      <div class="loader-bar"></div>
+    </div>
+    <p class="loader-text">نحن نبني ثقتك.. تفصيلاً تفصيلاً</p>
+  </div>
+
+  <!-- ===== المؤشر المخصص ===== -->
+  <div class="cursor"></div>
+
+  <!-- ===== الناف بار ===== -->
+  <header class="navbar" id="navbar">
+    <div class="nav-logo">
+      <div class="nav-logo-badge">
+        <img src="img/1.jpg" alt="شعار SkyLine" />
+      </div>
+      <div class="nav-logo-text">SkyLine</div>
+    </div>
+
+    <ul class="nav-links" id="navLinks">
+      <button class="close-menu" id="closeMenu">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <li><a href="index.html#hero"><i class="fa-solid fa-house"></i> الرئيسية</a></li>
+      <li><a href="index.html#who"><i class="fa-solid fa-users"></i> من نحن</a></li>
+      <li><a href="properties.html"><i class="fa-solid fa-building"></i> العقارات</a></li>
+      <li><a href="index.html#faq"><i class="fa-solid fa-circle-question"></i> لماذا SkyLine؟</a></li>
+      <li><a href="index.html#contact"><i class="fa-solid fa-envelope"></i> تواصل</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle" aria-label="تبديل الوضع">
+        <i class="fa-solid fa-moon"></i>
+      </button>
+      <a href="index.html#contact" class="nav-cta">ابدأ الآن</a>
+      <button class="nav-burger" id="navBurger" aria-label="فتح القائمة">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <div class="nav-overlay" id="navOverlay"></div>
+
+  <!-- ============================================================
+     صفحة تفاصيل العقار
+     ============================================================ -->
+  <section class="property-detail-page">
+    <div class="container">
+
+      <!-- Breadcrumb -->
+      <div class="breadcrumb">
+        <a href="index.html">الرئيسية</a>
+        <span class="separator"><i class="fa-solid fa-chevron-left"></i></span>
+        <a href="properties.html">العقارات</a>
+        <span class="separator"><i class="fa-solid fa-chevron-left"></i></span>
+        <span class="current">تفاصيل العقار</span>
+      </div>
+
+      <!-- ===== معرض الصور ===== -->
+      <div class="property-gallery">
+        <div class="main-image">
+          <img id="mainImage" src="img/9.jpg" alt="صورة العقار الرئيسية" />
+          <div class="gallery-badge">
+            <i class="fa-regular fa-image"></i>
+            <span id="imageCount">4</span> صور
+          </div>
+        </div>
+        <div class="thumbnails" id="thumbnailsContainer">
+          <img src="img/9.jpg" alt="" onclick="changeMainImage(this.src)" />
+          <img src="img/8.jpg" alt="" onclick="changeMainImage(this.src)" />
+          <img src="img/7.jpg" alt="" onclick="changeMainImage(this.src)" />
+          <img src="img/6.jpg" alt="" onclick="changeMainImage(this.src)" />
+        </div>
+      </div>
+
+      <!-- ===== المحتوى ===== -->
+      <div class="detail-content">
+
+        <!-- ===== العمود الأيسر ===== -->
+        <div class="detail-main">
+
+          <h1 id="propertyTitle">فيلا فاخرة بإطلالة بحرية</h1>
+          <div class="detail-price" id="propertyPrice">$1,250,000</div>
+          <div class="detail-location">
+            <i class="fa-solid fa-location-dot"></i>
+            <span id="propertyLocation">دمشق - سوريا</span>
+          </div>
+
+          <div class="detail-tags">
+            <span class="featured">مميز</span>
+            <span id="propertyTag">للبيع</span>
+          </div>
+
+          <p class="detail-description" id="propertyDescription">
+            تتميز هذه الفيلا الفاخرة بتصميم عصري وإطلالة بحرية ساحرة. تتكون من 4 غرف نوم واسعة، 3 حمامات، وصالة معيشة مفتوحة. المطبخ مجهز بأحدث التقنيات، والحديقة الخارجية توفر مساحة مثالية للاسترخاء والاستمتاع بأجمل الأوقات مع العائلة.
+          </p>
+
+          <!-- المواصفات -->
+          <div class="detail-specs" id="specsContainer">
+            <div class="spec-item">
+              <div class="spec-value" id="specArea">350م²</div>
+              <div class="spec-label">المساحة</div>
+            </div>
+            <div class="spec-item">
+              <div class="spec-value" id="specBedrooms">4</div>
+              <div class="spec-label">غرف نوم</div>
+            </div>
+            <div class="spec-item">
+              <div class="spec-value" id="specBathrooms">3</div>
+              <div class="spec-label">حمامات</div>
+            </div>
+            <div class="spec-item">
+              <div class="spec-value" id="specYear">2022</div>
+              <div class="spec-label">سنة البناء</div>
+            </div>
+          </div>
+
+          <!-- الخريطة -->
+          <div class="detail-map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2712.3456789!2d36.276!3d33.513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzPCsDMwJzQ2LjgiTiAzNsKwMTYnMzMuNiJF!5e0!3m2!1sen!2s!4v1700000000000"
+              loading="lazy"
+              allowfullscreen
+              title="موقع العقار على الخريطة">
+            </iframe>
+          </div>
+
+          <!-- العقارات المشابهة -->
+          <div class="similar-properties">
+            <h3>عقارات مشابهة</h3>
+            <div class="similar-grid">
+              <div class="similar-card" onclick="window.location.href='property-detail.html?id=1'">
+                <img src="img/8.jpg" alt="شقة حديثة" />
+                <div class="similar-body">
+                  <div class="similar-price">$890,000</div>
+                  <div class="similar-title">شقة حديثة في قلب المدينة</div>
+                  <div class="similar-location"><i class="fa-solid fa-location-dot"></i> دمشق - سوريا</div>
+                </div>
+              </div>
+              <div class="similar-card" onclick="window.location.href='property-detail.html?id=2'">
+                <img src="img/7.jpg" alt="بنتهاوس" />
+                <div class="similar-body">
+                  <div class="similar-price">$3,500 / شهر</div>
+                  <div class="similar-title">بنتهاوس فاخر بإطلالة رائعة</div>
+                  <div class="similar-location"><i class="fa-solid fa-location-dot"></i> دمشق - سوريا</div>
+                </div>
+              </div>
+              <div class="similar-card" onclick="window.location.href='property-detail.html?id=3'">
+                <img src="img/6.jpg" alt="فيلا كلاسيكية" />
+                <div class="similar-body">
+                  <div class="similar-price">$2,100,000</div>
+                  <div class="similar-title">فيلا كلاسيكية فاخرة</div>
+                  <div class="similar-location"><i class="fa-solid fa-location-dot"></i> دمشق - سوريا</div>
+                </div>
+              </div>
+              <div class="similar-card" onclick="window.location.href='property-detail.html?id=4'">
+                <img src="img/5.jpg" alt="فيلا عصرية" />
+                <div class="similar-body">
+                  <div class="similar-price">$1,450,000</div>
+                  <div class="similar-title">فيلا عصرية بإطلالة جبلية</div>
+                  <div class="similar-location"><i class="fa-solid fa-location-dot"></i> دمشق - سوريا</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===== العمود الأيمن (جهة الاتصال) ===== -->
+        <div class="detail-sidebar">
+          <div class="contact-card">
+            <h3>تواصل معنا</h3>
+            <p class="contact-sub">للاستفسار عن هذا العقار</p>
+
+            <div class="contact-item">
+              <i class="fa-solid fa-phone"></i>
+              <div class="contact-text">
+                <strong>اتصل بنا</strong>
+                +963 123 456 789
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fa-regular fa-envelope"></i>
+              <div class="contact-text">
+                <strong>البريد الإلكتروني</strong>
+                info@skyline.com
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fa-regular fa-clock"></i>
+              <div class="contact-text">
+                <strong>ساعات العمل</strong>
+                الإثنين - الجمعة: 9ص - 6م
+              </div>
+            </div>
+
+            <a href="index.html#contact" class="contact-btn">
+              اطلب استشارة مجانية <i class="fa-solid fa-arrow-left"></i>
+            </a>
+          </div>
+
+          <div class="agent-card">
+            <div class="agent-avatar"><i class="fa-regular fa-user"></i></div>
+            <div class="agent-name">محمد أحمد</div>
+            <div class="agent-title">مستشار عقاري أول</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== الفوتر ===== -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo">SkyLine</div>
+          <p class="footer-about">حلول عقارية فاخرة بمعايير عالمية تجمع بين الجودة والابتكار والخبرة.</p>
+        </div>
+        <div>
+          <h3 style="margin-bottom:14px;font-size:17px;">روابط سريعة</h3>
+          <div class="footer-links">
+            <a href="index.html#hero">الرئيسية</a>
+            <a href="index.html#who">من نحن</a>
+            <a href="properties.html">العقارات</a>
+            <a href="index.html#faq">لماذا SkyLine؟</a>
+            <a href="index.html#contact">تواصل</a>
+          </div>
+        </div>
+        <div>
+          <h3 style="margin-bottom:14px;font-size:17px;">خدماتنا</h3>
+          <div class="footer-links">
+            <a href="#">بيع العقارات</a>
+            <a href="#">شراء العقارات</a>
+            <a href="#">الاستثمار العقاري</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">© 2026 SkyLine Premium Real Estate — جميع الحقوق محفوظة.</div>
+    </div>
+  </footer>
+
+  <!-- ===== زر العودة للأعلى ===== -->
+  <a href="#" class="to-top" id="toTop"><i class="fa-solid fa-arrow-up"></i></a>
+
+  <!-- ===== زر الشات بوت ===== -->
+  <button class="chat-toggle" id="chatToggle" onclick="toggleChat()" aria-label="فتح المحادثة">
+    <i class="fa-regular fa-comment"></i>
+    <i class="fa-solid fa-xmark"></i>
+  </button>
+
+  <!-- ===== نافذة الشات ===== -->
+  <div class="chat-window" id="chatWindow">
+    <div class="chat-header">
+      <div class="chat-header-info">
+        <div class="chat-avatar"><i class="fa-regular fa-comment"></i></div>
+        <div>
+          <span class="chat-name">مساعد SkyLine</span>
+          <span class="chat-status">متصل الآن</span>
+        </div>
+      </div>
+      <button class="chat-header-close" onclick="toggleChat()">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+    <div class="chat-messages" id="chatMessages">
+      <div class="chat-message bot">أهلاً بك! 👋</div>
+      <div class="chat-message bot">كيف يمكنني مساعدتك اليوم؟</div>
+    </div>
+    <div class="chat-footer">
+      <input type="text" id="chatInput" placeholder="اكتب رسالتك هنا..." onkeypress="if(event.key==='Enter') sendMessage()" />
+      <button class="send-btn" onclick="sendMessage()">
+        <i class="fa-regular fa-paper-plane"></i>
+      </button>
+    </div>
+  </div>
+
+<script src="js/property-detail.js"></script>
+
+</body>
+</html>
