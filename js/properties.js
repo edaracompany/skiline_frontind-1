@@ -352,5 +352,5 @@
     });
 
     console.log("%c SkyLine Premium ", "font-size:28px;color:silver;font-weight:bold");
-    console.log("%c صفحة استعرض العقارات جاهزة 🏠 ", "font-size:14px;color:silver;");
+    console.log("%c صفحة استعرض العقارات جاهزة  ", "font-size:14px;color:silver;");
     console.log("%c الفلتر والترقيم يعملان معاً بشكل مثالي ✅", "font-size:14px;color:silver;");

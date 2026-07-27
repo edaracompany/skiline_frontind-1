@@ -5,6 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>استعرض العقارات | SkyLine Premium</title>
 
+  <!-- ====== Favicon ====== -->
+  <link rel="icon" type="image/jpeg" sizes="32x32" href="img/90.jpg" />
+  <link rel="icon" type="image/jpeg" sizes="16x16" href="img/90.jpg" />
+  <link rel="apple-touch-icon" sizes="180x180" href="img/90.jpg" />
+
   <!-- ====== الخطوط ====== -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -47,7 +52,9 @@
       </button>
       <li><a href="index.html#hero"><i class="fa-solid fa-house"></i> الرئيسية</a></li>
       <li><a href="index.html#who"><i class="fa-solid fa-users"></i> من نحن</a></li>
+      <li><a href="index.html#featured"><i class="fa-solid fa-star"></i> عقارات مميزة</a></li>
       <li><a href="properties.html" class="active"><i class="fa-solid fa-building"></i> استعرض العقارات</a></li>
+      <li><a href="index.html#testimonials"><i class="fa-solid fa-comments"></i> آراء العملاء</a></li>
       <li><a href="index.html#faq"><i class="fa-solid fa-circle-question"></i> لماذا SkyLine؟</a></li>
       <li><a href="index.html#contact"><i class="fa-solid fa-envelope"></i> تواصل</a></li>
     </ul>
@@ -69,13 +76,11 @@
   <section class="properties-page">
     <div class="container">
 
-      <!-- العنوان -->
       <div class="properties-header">
         <h1>استعرض جميع العقارات</h1>
         <p>تصفح مجموعتنا الكاملة من العقارات الفاخرة. اختر ما يناسبك وتواصل معنا.</p>
       </div>
 
-      <!-- الفلتر -->
       <div class="filter-section">
         <form id="filterForm">
           <div class="filter-grid">
@@ -121,9 +126,7 @@
         </form>
       </div>
 
-      <!-- شبكة العقارات -->
       <div class="properties-grid" id="propertiesGrid">
-
         <!-- العقار 1 -->
         <div class="property-card" data-type="villa" data-offer="sale" data-price="1250000" data-bedrooms="4">
           <div class="property-card-image" onclick="window.location.href='property-detail.html?id=0'">
@@ -249,10 +252,8 @@
             </a>
           </div>
         </div>
-
       </div>
 
-      <!-- ترقيم الصفحات -->
       <div class="pagination" id="pagination">
         <button class="prev-page"><i class="fa-solid fa-chevron-right"></i></button>
         <button class="page-btn active" data-page="1">1</button>
@@ -313,7 +314,9 @@
           <div class="footer-links">
             <a href="index.html#hero">الرئيسية</a>
             <a href="index.html#who">من نحن</a>
+            <a href="index.html#featured">عقارات مميزة</a>
             <a href="properties.html">استعرض العقارات</a>
+            <a href="index.html#testimonials">آراء العملاء</a>
             <a href="index.html#faq">لماذا SkyLine؟</a>
             <a href="index.html#contact">تواصل</a>
           </div>

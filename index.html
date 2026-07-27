@@ -5,6 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SkyLine Premium | العقارات الفاخرة</title>
 
+  <!-- ====== Favicon ====== -->
+  <link rel="icon" type="image/jpeg" sizes="32x32" href="img/90.jpg" />
+  <link rel="icon" type="image/jpeg" sizes="16x16" href="img/90.jpg" />
+  <link rel="apple-touch-icon" sizes="180x180" href="img/90.jpg" />
+
   <!-- ====== الخطوط ====== -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,9 +20,7 @@
 
   <!-- ====== Swiper.js ====== -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="css/index.css">
-
-  
+  <link rel="stylesheet" href="css/index.css" />
 </head>
 
 <body>
@@ -30,7 +33,7 @@
     <div class="loader-bar-wrap">
       <div class="loader-bar"></div>
     </div>
-    <p class="loader-text">نحن نبني ثقتك.. تفصيلاً تفصيلاً</p>
+    <p class="loader-text">أستثمر و انت مرتاح</p>
   </div>
 
   <!-- ===== المؤشر المخصص ===== -->
@@ -53,6 +56,7 @@
       <li><a href="#who"><i class="fa-solid fa-users"></i> من نحن</a></li>
       <li><a href="#featured"><i class="fa-solid fa-star"></i> عقارات مميزة</a></li>
       <li><a href="properties.html"><i class="fa-solid fa-building"></i> استعرض العقارات</a></li>
+      <li><a href="#testimonials"><i class="fa-solid fa-comments"></i> آراء العملاء</a></li>
       <li><a href="#faq"><i class="fa-solid fa-circle-question"></i> لماذا SkyLine؟</a></li>
       <li><a href="#contact"><i class="fa-solid fa-envelope"></i> تواصل</a></li>
     </ul>
@@ -117,9 +121,8 @@
           <div class="who-stats">
             <div class="who-stat"><h3>15+</h3><span>سنة خبرة</span></div>
             <div class="who-stat"><h3>240</h3><span>مشروع مكتمل</span></div>
-            <div class="who-stat"><h3>980+</h3><span>عميل سعيد</span></div>
           </div>
-          <a href="#contact" class="who-btn">تحدث مع مستشارنا <i class="fa-solid fa-arrow-left"></i></a>
+          <button onclick="toggleChat()" class="who-btn">تحدث مع مستشارنا <i class="fa-solid fa-arrow-left"></i></button>
         </div>
       </div>
     </div>
@@ -130,14 +133,12 @@
     <div class="container">
       <div class="section-head">
         <small>عقارات مميزة</small>
-        <h2>اختر عقار أحلامك</h2>
+        <h2>أستثمر الأن</h2>
         <p>مجموعة مختارة من أفضل العقارات الفاخرة في مواقع استراتيجية.</p>
       </div>
 
-      <!-- ===== Swiper ===== -->
       <div class="swiper featured-swiper">
         <div class="swiper-wrapper">
-
           <!-- العقار 1 -->
           <div class="swiper-slide">
             <div class="featured-slide">
@@ -153,7 +154,6 @@
               </div>
             </div>
           </div>
-
           <!-- العقار 2 -->
           <div class="swiper-slide">
             <div class="featured-slide">
@@ -169,7 +169,6 @@
               </div>
             </div>
           </div>
-
           <!-- العقار 3 -->
           <div class="swiper-slide">
             <div class="featured-slide">
@@ -185,7 +184,6 @@
               </div>
             </div>
           </div>
-
           <!-- العقار 4 -->
           <div class="swiper-slide">
             <div class="featured-slide">
@@ -201,7 +199,6 @@
               </div>
             </div>
           </div>
-
           <!-- العقار 5 -->
           <div class="swiper-slide">
             <div class="featured-slide">
@@ -217,7 +214,6 @@
               </div>
             </div>
           </div>
-
           <!-- العقار 6 -->
           <div class="swiper-slide">
             <div class="featured-slide">
@@ -233,7 +229,6 @@
               </div>
             </div>
           </div>
-
         </div>
 
         <div class="swiper-button-next"></div>
@@ -243,9 +238,101 @@
     </div>
   </section>
 
-  <!-- ============================================================
-     القسم: لماذا SkyLine؟ + أسئلة عن العقارات في سوريا
-     ============================================================ -->
+  <!-- ===== آراء العملاء ===== -->
+  <section id="testimonials">
+    <div class="container">
+      <div class="section-head">
+        <small>آراء العملاء</small>
+        <h2>ما يقولون <span>عنّا</span></h2>
+        <p>نفخر بثقة عملائنا الذين جعلونا جزءاً من رحلتهم العقارية.</p>
+      </div>
+
+      <div class="testimonials-grid">
+        <!-- رأي 1 -->
+        <div class="testimonial-card">
+          <div class="testimonial-stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p class="testimonial-text">"تجربة استثنائية مع SkyLine Premium. فريق محترف ومتعاون، ساعدوني في إيجاد منزل أحلامي بكل سهولة. أنصح الجميع بالتعامل معهم."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">
+              <i class="fa-regular fa-user"></i>
+            </div>
+            <div>
+              <h4>أحمد الحسين</h4>
+              <span>عميل متميز</span>
+            </div>
+          </div>
+        </div>
+        <!-- رأي 2 -->
+        <div class="testimonial-card">
+          <div class="testimonial-stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p class="testimonial-text">"احترافية عالية جداً من البداية حتى النهاية. العقارات التي يعرضونها فاخرة ومتنوعة، والأسعار منافسة. شكراً لفريق SkyLine على جهودهم."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">
+              <i class="fa-regular fa-user"></i>
+            </div>
+            <div>
+              <h4>سارة خالد</h4>
+              <span>مستثمرة عقارية</span>
+            </div>
+          </div>
+        </div>
+        <!-- رأي 3 -->
+        <div class="testimonial-card">
+          <div class="testimonial-stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p class="testimonial-text">"فضلت SkyLine Premium على غيرهم بسبب الشفافية والمصداقية. استشارتهم القانونية كانت دقيقة وساعدتني في إتمام الصفقة بكل ثقة. تجربة لا تُنسى."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">
+              <i class="fa-regular fa-user"></i>
+            </div>
+            <div>
+              <h4>محمد العلي</h4>
+              <span>مشتري عقار</span>
+            </div>
+          </div>
+        </div>
+        <!-- رأي 4 -->
+        <div class="testimonial-card">
+          <div class="testimonial-stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p class="testimonial-text">"خدمة عملاء ممتازة وفريق متخصص يعرف احتياجات السوق. ساعدوني في استثمار ناجح بعائد ممتاز. أنصح أي شخص يبحث عن عقار فاخر بالتواصل معهم."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">
+              <i class="fa-regular fa-user"></i>
+            </div>
+            <div>
+              <h4>ليلى العبد</h4>
+              <span>عميلة سعيدة</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== لماذا SkyLine؟ ===== -->
   <section id="faq">
     <div class="container">
       <div class="section-head">
@@ -255,7 +342,6 @@
       </div>
 
       <div class="faq-grid">
-
         <div class="faq-item active">
           <div class="faq-question" onclick="toggleFaq(this)">
             <span>لماذا تختار SkyLine Premium؟</span>
@@ -265,7 +351,6 @@
             <p>خبرة 15 عاماً في السوق السوري، شبكة واسعة من العقارات الفاخرة، فريق استشاري متخصص، وشفافية كاملة في كل صفقة. نضع مصلحتك فوق كل اعتبار.</p>
           </div>
         </div>
-
         <div class="faq-item">
           <div class="faq-question" onclick="toggleFaq(this)">
             <span>ما هي أفضل المناطق السكنية في دمشق؟</span>
@@ -275,7 +360,6 @@
             <p><strong>المالكي، أبو رمانة، الربوة، واليرموك.</strong> المالكي وأبو رمانة من أعرق المناطق وأكثرها هدوءاً، الربوة توفر إطلالات طبيعية، واليرموك منطقة حيوية قريبة من الخدمات.</p>
           </div>
         </div>
-
         <div class="faq-item">
           <div class="faq-question" onclick="toggleFaq(this)">
             <span>ما هي إجراءات شراء عقار في سوريا؟</span>
@@ -285,7 +369,6 @@
             <p>تبدأ بتوقيع عقد ابتدائي، ثم التوجه إلى <strong>دائرة السجل العقاري</strong> لإتمام التسجيل. تحتاج هوية شخصية، وإثبات ملكية البائع، وعقد البيع النهائي. تستغرق العملية من أسبوعين إلى شهر.</p>
           </div>
         </div>
-
         <div class="faq-item">
           <div class="faq-question" onclick="toggleFaq(this)">
             <span>هل الاستثمار العقاري في سوريا مربح؟</span>
@@ -295,7 +378,6 @@
             <p>نعم، خاصة في دمشق وحلب. مع عودة الاستقرار، تشهد الأسعار ارتفاعاً تدريجياً. العائد على الإيجار في المناطق الحيوية يتراوح بين <strong>6% إلى 10%</strong> سنوياً.</p>
           </div>
         </div>
-
         <div class="faq-item">
           <div class="faq-question" onclick="toggleFaq(this)">
             <span>ما هي الضرائب والرسوم المترتبة؟</span>
@@ -305,7 +387,6 @@
             <p>تشمل <strong>رسوم التسجيل العقاري</strong> (حوالي 3% من قيمة العقار)، رسوم الطابع، وضريبة الأبنية السنوية. فريقنا القانوني يقدم استشارة تفصيلية قبل إتمام الصفقة.</p>
           </div>
         </div>
-
         <div class="faq-item">
           <div class="faq-question" onclick="toggleFaq(this)">
             <span>هل يمكن الشراء بدون تمويل بنكي؟</span>
@@ -315,14 +396,11 @@
             <p>نعم، يمكنك الشراء نقداً أو عبر خطة تقسيط مع البائع. نقدم في SkyLine Premium خدمات تسهيل الدفع مع مطورين موثوقين، بمقدم يبدأ من <strong>20%</strong> وتقسيط حتى 5 سنوات.</p>
           </div>
         </div>
-
       </div>
     </div>
   </section>
 
-  <!-- ============================================================
-     قسم تواصل معنا
-     ============================================================ -->
+  <!-- ===== تواصل معنا ===== -->
   <section id="contact">
     <div class="container contact-wrapper">
       <div class="section-head">
@@ -332,7 +410,6 @@
       </div>
 
       <div class="contact-grid">
-        <!-- نموذج الاتصال -->
         <div class="contact-form-box">
           <h3 class="form-title">أرسل لنا رسالتك</h3>
           <p class="form-subtitle">سنرد عليك في أقرب وقت ممكن</p>
@@ -345,14 +422,10 @@
                 <span class="input-icon"><i class="fa-regular fa-user"></i></span>
               </div>
               <div class="form-group">
-                <label>البريد الإلكتروني</label>
-                <input type="email" placeholder="بريدك الإلكتروني" required />
-                <span class="input-icon"><i class="fa-regular fa-envelope"></i></span>
+                <label>رقم الهاتف</label>
+                <input type="tel" placeholder="رقم هاتفك للتواصل" required />
+                <span class="input-icon"><i class="fa-solid fa-phone"></i></span>
               </div>
-            </div>
-            <div class="form-group">
-              <label>رقم الهاتف</label>
-              <input type="tel" placeholder="رقم هاتفك للتواصل" />
             </div>
             <div class="form-group">
               <label>الموضوع</label>
@@ -370,48 +443,60 @@
           </form>
         </div>
 
-        <!-- معلومات الاتصال -->
         <div class="contact-info-box">
           <div class="info-head">
             <h3>معلومات التواصل</h3>
             <p>تواصل معنا عبر القنوات التالية، أو تابعنا على وسائل التواصل الاجتماعي.</p>
           </div>
 
+          <div class="contact-info-items">
+            <div class="info-item">
+              <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div class="info-text">
+                <h4>العنوان</h4>
+                <p>دمشق - سوريا</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+              <div class="info-text">
+                <h4>رقم الهاتف</h4>
+                <p dir="ltr">+963 967 514 352</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div class="info-text">
+                <h4>البريد الإلكتروني</h4>
+                <p dir="ltr">info@skyline.com</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="info-icon"><i class="fa-regular fa-clock"></i></div>
+              <div class="info-text">
+                <h4>ساعات العمل</h4>
+                <p>الإثنين - الجمعة: 9:00 صباحاً - 6:00 مساءً</p>
+              </div>
+            </div>
+          </div>
 
-
-            <div class="contact-info-items">
-  <div class="info-item">
-    <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
-    <div class="info-text">
-      <h4>العنوان</h4>
-      <p>دمشق - سوريا</p>
+          <div class="contact-social">
+            <h4 style="text-align: center;">تابعنا على</h4>
+            <div class="social-links" style="justify-content: center;">
+              <a href="https://www.facebook.com/skylinepremium" target="_blank" aria-label="فيسبوك">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+              <a href="https://www.instagram.com/skylinepremium" target="_blank" aria-label="انستغرام">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="https://wa.me/963967514352" target="_blank" aria-label="واتساب">
+                <i class="fa-brands fa-whatsapp"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-
-  <div class="info-item">
-    <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
-    <div class="info-text">
-      <h4>رقم الهاتف</h4>
-      <p dir="ltr">+963 123 456 789</p>  <!-- ← هنا التعديل -->
-    </div>
-  </div>
-
-  <div class="info-item">
-    <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
-    <div class="info-text">
-      <h4>البريد الإلكتروني</h4>
-      <p dir="ltr">info@skyline.com</p>
-    </div>
-  </div>
-
-  <div class="info-item">
-    <div class="info-icon"><i class="fa-regular fa-clock"></i></div>
-    <div class="info-text">
-      <h4>ساعات العمل</h4>
-      <p>الإثنين - الجمعة: 9:00 صباحاً - 6:00 مساءً</p>
-    </div>
-  </div>
-</div>
   </section>
 
   <!-- ===== الفوتر ===== -->
@@ -420,7 +505,7 @@
       <div class="footer-grid">
         <div>
           <div class="footer-logo">SkyLine</div>
-          <p class="footer-about">حلول عقارية فاخرة بمعايير عالمية تجمع بين الجودة والابتكار والخبرة.</p>
+          <p class="footer-about">أستثمر و انت مرتاح.</p>
         </div>
         <div>
           <h3 style="margin-bottom:14px;font-size:17px;">روابط سريعة</h3>
@@ -429,6 +514,7 @@
             <a href="#who">من نحن</a>
             <a href="#featured">عقارات مميزة</a>
             <a href="properties.html">استعرض العقارات</a>
+            <a href="#testimonials">آراء العملاء</a>
             <a href="#faq">لماذا SkyLine؟</a>
             <a href="#contact">تواصل</a>
           </div>
@@ -439,6 +525,20 @@
             <a href="#">بيع العقارات</a>
             <a href="#">شراء العقارات</a>
             <a href="#">الاستثمار العقاري</a>
+          </div>
+        </div>
+        <div>
+          <h3 style="margin-bottom:14px;font-size:17px;">تواصل معنا</h3>
+          <div class="footer-links">
+            <a href="https://www.facebook.com/skylinepremium" target="_blank">
+              <i class="fa-brands fa-facebook-f" style="margin-left:8px;"></i> فيسبوك
+            </a>
+            <a href="https://www.instagram.com/skylinepremium" target="_blank">
+              <i class="fa-brands fa-instagram" style="margin-left:8px;"></i> انستغرام
+            </a>
+            <a href="https://wa.me/963967514352" target="_blank">
+              <i class="fa-brands fa-whatsapp" style="margin-left:8px;"></i> واتساب
+            </a>
           </div>
         </div>
       </div>
@@ -483,13 +583,8 @@
     </div>
   </div>
 
-  <!-- ============================================================
-     السكريبتات
-     ============================================================ -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js">
-  </script>
-<script src="js/index.js"></script>
-  
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/index.js"></script>
 
 </body>
 </html>
