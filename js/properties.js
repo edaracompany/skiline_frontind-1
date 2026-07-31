@@ -350,7 +350,23 @@
         closeModal();
       }
     });
-
+// ============================================================
+// 12. تفعيل الفلتر من الرابط (للروابط القادمة من الفوتر)
+// ============================================================
+document.addEventListener('DOMContentLoaded', function() {
+  const urlParams = new URLSearchParams(window.location.search);
+  const offer = urlParams.get('offer');
+  
+  if (offer === 'sale' || offer === 'rent') {
+    // تعيين قيمة الفلتر
+    const offerSelect = document.getElementById('offerType');
+    if (offerSelect) {
+      offerSelect.value = offer;
+      // تنفيذ الفلتر تلقائياً بعد تحميل الصفحة
+      setTimeout(filterProperties, 300);
+    }
+  }
+});
     console.log("%c SkyLine Premium ", "font-size:28px;color:silver;font-weight:bold");
     console.log("%c صفحة استعرض العقارات جاهزة  ", "font-size:14px;color:silver;");
     console.log("%c الفلتر والترقيم يعملان معاً بشكل مثالي ✅", "font-size:14px;color:silver;");
